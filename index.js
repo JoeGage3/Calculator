@@ -19,27 +19,27 @@ for (i = 0; i < num_nums; i++) {
     arr.push(num);
 }
 
-var first = arr[0];
+const start = arr[0];
 arr.shift();
 
 switch(operator) {
     case '+': {
-            const answer = arr.reduce(function(first, second) { return first + second; }, first);
+            const answer = arr.reduce(function(first, second) { return first + second; }, start);
             console.log('\nThe answer is: ' + answer + '.');
         }
         break;
     case '-': {
-            const answer = arr.reduce(function(first, second) { return first - second; }, first);
+            const answer = arr.reduce(function(first, second) { return first - second; }, start);
             console.log('\nThe answer is: ' + answer + '.');
         }
         break;
     case '*': {
-            const answer = arr.reduce(function(first, second) { return first * second; }, first);
+            const answer = arr.reduce(function(first, second) { return first * second; }, start);
             console.log('\nThe answer is: ' + answer + '.');
         }
         break;
     case '/': {
-            const answer = arr.reduce(function(first, second) { return first / second; }, first);
+            const answer = arr.reduce(function(first, second) { return first / second; }, start);
             console.log('\nThe answer is: ' + answer + '.');
         }
         break;
