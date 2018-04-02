@@ -7,7 +7,8 @@ console.log('\nPlease enter the operator:');
 const operator = readline.prompt();
 
 console.log('\nHow many numbers do you want to ' + operator + '?');
-const num_nums = readline.prompt();
+const input_nums = readline.prompt();
+const num_nums = +input_nums;
 
 var i;
 var arr = [];
